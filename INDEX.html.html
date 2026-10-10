@@ -3,78 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhakkar Riders</title>
+<title>Bhakkar Riders | Official Website</title>
 
 <style>
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
   background: #101010;
   color: white;
+  line-height: 1.7;
 }
 
 header {
-  background: #e63920;
-  padding: 22px;
+  background: #d71920;
+  padding: 22px 12px;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 32px;
+  font-size: 34px;
+  font-weight: 900;
 }
 
 nav {
-  background: #222;
-  padding: 15px;
+  background: #202020;
+  padding: 15px 8px;
   text-align: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 10px;
+  margin: 8px;
   font-weight: bold;
 }
 
 .hero {
-  text-align: center;
+  min-height: 390px;
   padding: 80px 20px;
-  background: linear-gradient(135deg, #252525, #111);
+  text-align: center;
+  background: linear-gradient(135deg, #262626, #080808);
 }
 
 .hero h2 {
-  color: #ff4028;
-  font-size: 42px;
+  font-size: 40px;
+  color: #ff3838;
+  margin-bottom: 18px;
 }
 
 .hero p {
-  font-size: 19px;
-  line-height: 1.7;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .btn {
   display: inline-block;
-  background: #20c76a;
+  padding: 13px 23px;
+  margin: 8px;
+  background: #16a34a;
   color: white;
-  padding: 15px 25px;
-  border-radius: 8px;
   text-decoration: none;
+  border-radius: 7px;
   font-weight: bold;
-  margin-top: 15px;
+}
+
+.red {
+  background: #d71920;
 }
 
 section {
-  padding: 35px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
-h2 {
-  color: #ff4028;
+section h2 {
+  color: #ff3838;
+  font-size: 29px;
+  margin-bottom: 20px;
 }
 
 .cards {
@@ -82,32 +92,40 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 18px;
+  margin-top: 25px;
 }
 
 .card {
   background: #242424;
-  padding: 25px;
+  border: 1px solid #444;
   border-radius: 12px;
-  width: 260px;
+  padding: 25px;
+  width: 270px;
 }
 
 .card h3 {
-  color: #ff4028;
+  color: #ff3838;
+  margin-bottom: 12px;
+}
+
+.contact {
+  background: #1b1b1b;
 }
 
 footer {
-  background: #222;
   padding: 25px;
   text-align: center;
+  background: #080808;
+  color: #ccc;
 }
 
-footer a {
-  color: #20c76a;
-}
-
-@media(max-width:600px) {
+@media(max-width: 600px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 30px;
+  }
+
+  header h1 {
+    font-size: 27px;
   }
 }
 </style>
@@ -117,12 +135,12 @@ footer a {
 
 <header>
   <h1>🏍️ BHAKKAR RIDERS</h1>
-  <p>Ride Together • Stay Together</p>
+  <p>RIDE TOGETHER • STAY TOGETHER</p>
 </header>
 
 <nav>
   <a href="#home">Home</a>
-  <a href="#about">About Us</a>
+  <a href="#about">About</a>
   <a href="#rides">Our Rides</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -130,60 +148,64 @@ footer a {
 <div class="hero" id="home">
   <h2>WELCOME TO BHAKKAR RIDERS</h2>
   <p>
-    Explore the roads, enjoy the journey and ride with passion!<br>
-    Join our bike lovers community in Bhakkar, Pakistan.
+    One Community. One Passion. Endless Adventures.<br>
+    Join the bike riding community of Bhakkar, Pakistan!
   </p>
+
   <a class="btn"
      href="https://wa.me/923447631001"
      target="_blank">
      JOIN US ON WHATSAPP
   </a>
+
+  <a class="btn red" href="#rides">EXPLORE RIDES</a>
 </div>
 
 <section id="about">
   <h2>ABOUT BHAKKAR RIDERS</h2>
   <p>
-    We bring bike lovers together for friendship,
-    adventures, group rides and memorable journeys.
-    Safety and responsible riding always come first.
+    Bhakkar Riders brings motorcycle lovers together
+    for friendship, group rides and exciting road adventures.
+    We believe in unity, respect and safe riding.
   </p>
 </section>
 
 <section id="rides">
-  <h2>OUR RIDING COMMUNITY</h2>
+  <h2>OUR COMMUNITY</h2>
 
   <div class="cards">
     <div class="card">
       <h3>🏍️ Group Rides</h3>
-      <p>Enjoy memorable rides with fellow bikers.</p>
+      <p>Ride together and create unforgettable memories with fellow riders.</p>
     </div>
 
     <div class="card">
       <h3>🛣️ Road Adventures</h3>
-      <p>Discover new roads and beautiful destinations.</p>
+      <p>Explore new destinations and enjoy the freedom of the open road.</p>
     </div>
 
     <div class="card">
-      <h3>🤝 Rider Community</h3>
-      <p>Connect with bike lovers from Bhakkar.</p>
+      <h3>🤝 Rider Brotherhood</h3>
+      <p>Meet passionate bikers and become part of our growing community.</p>
     </div>
   </div>
 </section>
 
-<section id="contact">
-  <h2>CONTACT US</h2>
+<section class="contact" id="contact">
+  <h2>CONTACT BHAKKAR RIDERS</h2>
   <p>📍 Bhakkar, Punjab, Pakistan</p>
   <p>📞 0344-7631001</p>
 
   <a class="btn"
      href="https://wa.me/923447631001"
      target="_blank">
-     CHAT ON WHATSAPP
+     CHAT WITH US
   </a>
 </section>
 
 <footer>
-  <p>© 2026 Bhakkar Riders | Ride Safe 🏍️</p>
+  <p>© 2026 BHAKKAR RIDERS</p>
+  <p>RIDE SAFE • RIDE RESPONSIBLY 🏍️</p>
 </footer>
 
 </body>
